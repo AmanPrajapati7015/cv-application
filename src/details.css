@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* Page Structure */
 body{
     background-color: #F2F3F5;
     padding: 20px;
@@ -40,9 +40,7 @@ section#resume{
 
 
 
-
-
-
+/* Personal Details styles */
 .input-section{
     padding: 20px;
     background-color: white;
@@ -76,3 +74,46 @@ div.feild >input:focus{
 }
 
 
+/* input buttons Style */
+
+.input-section .btns{
+    display: flex;
+    gap: 10px;
+}
+.input-section .btns button{
+    flex: 1 0 0;
+    font-weight: 900;
+    padding: 8px 0;
+    border: 1px solid grey;
+    color: grey;
+    border-radius: 5px;
+    background: none;
+}
+
+.input-section .btns button.red{
+    color: #B91C1B;
+    border-color: #B91C1B;
+}
+.input-section .btns button.blue{
+    background-color: #187FF5;
+    color: white;
+    border-color: #187FF5;
+}
+
+
+@media print {
+    @page{
+        size: 21cm 29.7cm;;
+        margin: 0;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar, #sidebar > * {
+        display: none;
+    }
+    .wrapper{
+        width: min-content;
+    }
+}

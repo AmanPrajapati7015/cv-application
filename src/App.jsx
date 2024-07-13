@@ -6,25 +6,23 @@ import Resume from './resume'
 import educationsStatic from './educations'
 import experiencesStatic from './experiences'
 
-import '/node_modules/html2pdf.js/dist/html2pdf.bundle.min.js'
 
 
 function App() {
   const [details, setDetails] = useState({name:"Aman",email:"aman.prajapati7022@gmail.com", phone:"+91 9310543728", address:"New Delhi, India"});
   const [educations,setEducations] = useState(educationsStatic);
   const [experiences,setExperiences] = useState(experiencesStatic);
-  
-  function exractPdf(){
-    const resume = document.getElementById('resume');
-    console.log(html2pdf);
-    html2pdf().from(resume).save();
-  }
 
+  function clearResume(){
+    setDetails({name:"",email:"", phone:"", address:""});
+    setEducations([]);
+    setExperiences([]);
+  }
 
   return (
     <div className='wrapper'>
-      <div className="sidebar">
-        <button onClick={exractPdf}>Save Pdf</button>
+      <div id='sidebar' className="sidebar">
+        <Buttons clearResume={clearResume}/>
         <PersonalDlts details={details} setDetails={setDetails}/>
         <Education educations={educations} setEducations={setEducations}/>
         <Experience experiences={experiences} setExperiences={setExperiences}/>
@@ -33,6 +31,26 @@ function App() {
         <section id="resume">
           <Resume details={details} educations={educations} experiences={experiences}/>
         </section>
+      </div>
+
+    </div>
+  )
+}
+
+function Buttons ({clearResume}){
+  function exractPdf(){
+    window.print();
+  }
+  function reload(){
+    location.reload();
+  }
+
+  return (
+    <div className='input-section'>
+      <div className='btns'>
+        <button className='red' onClick={clearResume}>Clear Resume</button>
+        <button onClick={reload}>Load Example</button>
+        <button className='blue' onClick={exractPdf}>Save Pdf</button>
       </div>
 
     </div>
