@@ -3,8 +3,8 @@ import PersonalDlts from './personalDtls'
 import Education from './education'
 import Experience from './experience'
 import Resume from './resume'
-import educationsStatic from './educations'
-import experiencesStatic from './experiences'
+
+import {educationsStatic, experiencesStatic} from './utils'
 
 
 
