@@ -9,15 +9,49 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+div.wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sidebar{
+    flex: 1 0 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preview{
+    border-radius: 20px;
+}
+
+section#resume{
+    width: 21cm;
+    height: 29.7cm;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .25);
+}
+
+
+
+
+
+
+
+
+
 .input-section{
     padding: 20px;
     background-color: white;
-    width: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box;
+
 }
 
 div.feild{
@@ -40,3 +74,5 @@ div.feild >input, div.feild >textarea{
 div.feild >input:focus{
     box-shadow: 0 3px 15px rgba(59, 131, 246, .2);
 }
+
+

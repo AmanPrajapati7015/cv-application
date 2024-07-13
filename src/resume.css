@@ -1,0 +1,24 @@
+#resume .top{
+    background-color: #0E374E;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#resume .top h1{
+    font-size: 2rem;
+}
+
+#resume .top .details{
+    display: flex;
+    gap: 20px;
+}
+
+#resume .top .details >div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
