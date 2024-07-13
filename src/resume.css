@@ -22,3 +22,44 @@
     gap: 5px;
     align-items: center;
 }
+
+#resume .education-section{
+    padding: 0 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+#resume .education-section > h3{
+    background-color: #EEF1F2;
+    color: #0E374E;
+    padding: 5px;
+    text-align: center;
+}
+
+#resume .education-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#resume .education-list .education-entry{
+    display: flex;
+    gap: 30px;
+}
+
+.education-entry .side{
+    width: 130px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.education-entry .main{
+    flex-grow: 1;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

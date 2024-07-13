@@ -24,6 +24,7 @@ function Feild({id,label, details, setDetails}){
         <input id={id}
             type="text" 
             placeholder={"Enter "+label} 
+            value={details[id]}
             onChange={e=>{
                 const newState = {...details};
                 newState[id] = e.target.value;

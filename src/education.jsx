@@ -1,16 +1,14 @@
 import { useState } from "react"
 import {Feild} from './utils';
 import "./education.css"
-import educationsStatic from './educations'
 import { v4 as uuid } from 'uuid';
 
 
-export default function Education(){
+export default function Education({educations,setEducations}){
     
     const [expanded, setExpanded] = useState(false);
-    const [educations,setEducations] = useState(educationsStatic);
 
-    console.table(educations);
+    // console.table(educations);
 
     return (
         <>

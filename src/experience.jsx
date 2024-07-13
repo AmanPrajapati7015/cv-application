@@ -1,13 +1,11 @@
 import { useState } from "react"
 import {Feild} from './utils';
-import experiencesStatic from './experiences'
 import { v4 as uuid } from 'uuid';
 
 
-export default function Experience(){
+export default function Experience({experiences,setExperiences }){
     
     const [expanded, setExpanded] = useState(false);
-    const [experiences,setExperiences] = useState(experiencesStatic);
 
 
     return (

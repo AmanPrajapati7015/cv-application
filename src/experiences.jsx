@@ -2,31 +2,22 @@ import { v4 as uuid } from 'uuid';
 const educations = [
     {
         id: uuid(),
-        company: 'RPVV sec 10',
-        position: 'B Tech',
+        company: 'Umbrella Inc.',
+        position: 'UX & UI Designer',
         startDate: '08/2023',
         endDate: 'Present',
-        location: 'New Delhi, India',
-        descirption: 'Commodo cupidatat laborum Lorem consequat dolore sit veniam dolore. Ad eu do nulla id aliquip voluptate deserunt. Cupidatat irure et officia eiusmod ullamco elit. Non proident enim mollit incididunt consectetur duis aliqua officia. Incididunt eiusmod laborum laborum sunt elit proident duis adipisicing pariatur. Ex deserunt irure fugiat dolore. Proident velit qui labore laborum exercitation officia.'
+        location: 'New York City, US',
+        descirption: 'Designed and prototyped user interface patterns for various clients in various industries, ranging from self-service apps within the telecommunications-sector to mobile games for IOS and Android'
     },
     {
         id: uuid(),
-        company: 'DTU',
-        position: 'B Tech',
-        startDate: '08/2023',
-        endDate: 'Present',
-        location: 'New Delhi, India',
-        descirption: 'Commodo cupidatat laborum Lorem consequat dolore sit veniam dolore. Ad eu do nulla id aliquip voluptate deserunt. Cupidatat irure et officia eiusmod ullamco elit. Non proident enim mollit incididunt consectetur duis aliqua officia. Incididunt eiusmod laborum laborum sunt elit proident duis adipisicing pariatur. Ex deserunt irure fugiat dolore. Proident velit qui labore laborum exercitation officia.'
+        company: 'Black Mesa Labs',
+        position: 'UX Research Assistant',
+        startDate: '04/2022',
+        endDate: '02/2023',
+        location: 'Berlin, Germany',
+        descirption: 'Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers.'
     },
-    {
-        id: uuid(),
-        company: 'NSUT',
-        position: 'B Tech',
-        startDate: '08/2023',
-        endDate: 'Present',
-        location: 'New Delhi, India',
-        descirption: 'Commodo cupidatat laborum Lorem consequat dolore sit veniam dolore. Ad eu do nulla id aliquip voluptate deserunt. Cupidatat irure et officia eiusmod ullamco elit. Non proident enim mollit incididunt consectetur duis aliqua officia. Incididunt eiusmod laborum laborum sunt elit proident duis adipisicing pariatur. Ex deserunt irure fugiat dolore. Proident velit qui labore laborum exercitation officia.'
-    }
 ]
 
 export default educations;
