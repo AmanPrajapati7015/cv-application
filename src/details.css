@@ -12,24 +12,26 @@ body{
 .input-section{
     padding: 20px;
     background-color: white;
-    width: 300px;
+    width: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 div.feild{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex: 1 0 0;
 }
 
 div.feild > label{
     font-weight: 700;
 }
 
-div.feild >input{
+div.feild >input, div.feild >textarea{
     background-color: #F3F4F6;
     padding:  10px;
     border:  none;

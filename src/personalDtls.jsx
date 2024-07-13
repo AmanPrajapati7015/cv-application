@@ -7,7 +7,6 @@ export default function PersonalDlts(){
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
-
     
     console.table({name,email,phone,address});
 
