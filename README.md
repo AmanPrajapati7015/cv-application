@@ -1,8 +1,44 @@
-# React + Vite
+# CV Application
+This project is a minimal setup for a React application using Vite, with Hot Module Replacement (HMR) and ESLint rules for code quality.
+This was create as an project of React course in TheOdinePorject.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Getting Started](#getting-started)
+- [Live Demo](#live-demo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+Ensure you have Node.js installed. You can download it from [Node.js](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/AmanPrajapati7015/cv-application.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd cv-application
+   ```
+3. Install NPM packages:
+   ```sh
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server, run:
+```sh
+npm run dev
+```
+
+## Live Demo
+
+Check out the live demo [here](https://aman-cv-application.netlify.app/).
+
+---
