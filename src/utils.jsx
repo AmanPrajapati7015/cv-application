@@ -57,7 +57,7 @@ function Feild({id,label,onChange,curVal}){
             type="text" 
             placeholder={"Enter "+label} 
             value={curVal}
-            onChange={e=>onChange(e.target.value)} />
+            onChange={e=>onChange(e.target.value, id)} />
     </div>
     )
 }

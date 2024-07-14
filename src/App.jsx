@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import PersonalDlts from './personalDtls'
-import Education from './education'
-import Experience from './experience'
+import Section from './section'
 import Resume from './resume'
 
 import {educationsStatic, experiencesStatic} from './utils'
@@ -24,8 +23,8 @@ function App() {
       <div id='sidebar' className="sidebar">
         <Buttons clearResume={clearResume}/>
         <PersonalDlts details={details} setDetails={setDetails}/>
-        <Education educations={educations} setEducations={setEducations}/>
-        <Experience experiences={experiences} setExperiences={setExperiences}/>
+        <Section state={educations} setState={setEducations} section="education"/>
+        <Section state={experiences} setState={setExperiences} section="experience"/>
       </div>
       <div className="preview">
         <section id="resume">

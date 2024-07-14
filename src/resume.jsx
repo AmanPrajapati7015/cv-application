@@ -1,8 +1,7 @@
-import './resume.css'
+import './styles/resume.css'
 
 
 function Resume({details, educations, experiences}){
-
 
     return(
         <>
@@ -76,7 +75,6 @@ function EducationEntry({education}){
 }
 
 function ExperienceEntry({experience}){
-    console.log(experience);
     return (
     <div className="education-entry">
         <div className="side">
