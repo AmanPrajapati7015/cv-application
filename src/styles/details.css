@@ -13,6 +13,7 @@ div.wrapper{
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .sidebar{
